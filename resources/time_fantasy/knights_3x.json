@@ -1,0 +1,467 @@
+{ "frames": [
+  {
+   "filename": "knight1 down 0",
+   "frame": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 down 1",
+   "frame": { "x": 78, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 down 2",
+   "frame": { "x": 156, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 left 0",
+   "frame": { "x": 0, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 left 1",
+   "frame": { "x": 78, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 left 2",
+   "frame": { "x": 156, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 right 0",
+   "frame": { "x": 0, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 right 1",
+   "frame": { "x": 78, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 right 2",
+   "frame": { "x": 156, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 up 0",
+   "frame": { "x": 0, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 up 1",
+   "frame": { "x": 78, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight1 up 2",
+   "frame": { "x": 156, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 down 0",
+   "frame": { "x": 234, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 down 1",
+   "frame": { "x": 312, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 down 2",
+   "frame": { "x": 390, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 left 0",
+   "frame": { "x": 234, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 left 1",
+   "frame": { "x": 312, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 left 2",
+   "frame": { "x": 390, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 right 0",
+   "frame": { "x": 234, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 right 1",
+   "frame": { "x": 312, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 right 2",
+   "frame": { "x": 390, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 up 0",
+   "frame": { "x": 234, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 up 1",
+   "frame": { "x": 312, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight2 up 2",
+   "frame": { "x": 390, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 down 0",
+   "frame": { "x": 468, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 down 1",
+   "frame": { "x": 546, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 down 2",
+   "frame": { "x": 624, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 left 0",
+   "frame": { "x": 468, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 left 1",
+   "frame": { "x": 546, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 left 2",
+   "frame": { "x": 624, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 right 0",
+   "frame": { "x": 468, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 right 1",
+   "frame": { "x": 546, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 right 2",
+   "frame": { "x": 624, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 up 0",
+   "frame": { "x": 468, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 up 1",
+   "frame": { "x": 546, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight3 up 2",
+   "frame": { "x": 624, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 down 0",
+   "frame": { "x": 702, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 down 1",
+   "frame": { "x": 780, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 down 2",
+   "frame": { "x": 858, "y": 0, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 left 0",
+   "frame": { "x": 702, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 left 1",
+   "frame": { "x": 780, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 left 2",
+   "frame": { "x": 858, "y": 108, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 right 0",
+   "frame": { "x": 702, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 right 1",
+   "frame": { "x": 780, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 right 2",
+   "frame": { "x": 858, "y": 216, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 up 0",
+   "frame": { "x": 702, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 up 1",
+   "frame": { "x": 780, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  },
+  {
+   "filename": "knight4 up 2",
+   "frame": { "x": 858, "y": 324, "w": 78, "h": 108 },
+   "rotated": false,
+   "trimmed": false,
+   "spriteSourceSize": { "x": 0, "y": 0, "w": 78, "h": 108 },
+   "sourceSize": { "w": 78, "h": 108 },
+   "duration": 150
+  }
+],
+"meta": {
+ "app": "http://www.aseprite.org/",
+ "version": "1.3.16.1-dev",
+ "image": "knights_3x.png",
+ "format": "RGBA8888",
+ "size": { "w": 936, "h": 864 },
+ "scale": "1",
+ "frameTags": [
+  { "name": "knight1-down",  "from": 0,  "to": 2,  "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight1-left",  "from": 3,  "to": 5,  "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight1-right", "from": 6,  "to": 8,  "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight1-up",    "from": 9,  "to": 11, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight1-idle",  "from": 1,  "to": 1,  "direction": "forward",  "color": "#000000ff" },
+  { "name": "knight2-down",  "from": 12, "to": 14, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight2-left",  "from": 15, "to": 17, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight2-right", "from": 18, "to": 20, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight2-up",    "from": 21, "to": 23, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight3-down",  "from": 24, "to": 26, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight3-left",  "from": 27, "to": 29, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight3-right", "from": 30, "to": 32, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight3-up",    "from": 33, "to": 35, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight4-down",  "from": 36, "to": 38, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight4-left",  "from": 39, "to": 41, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight4-right", "from": 42, "to": 44, "direction": "pingpong", "color": "#000000ff" },
+  { "name": "knight4-up",    "from": 45, "to": 47, "direction": "pingpong", "color": "#000000ff" }
+ ],
+ "layers": [
+  { "name": "Sprite Sheet", "opacity": 255, "blendMode": "normal" }
+ ],
+ "slices": [
+ ]
+}
+}
