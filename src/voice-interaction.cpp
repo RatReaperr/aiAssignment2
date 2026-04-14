@@ -5,17 +5,30 @@
 #include "sdl3-audio-recorder.hpp"
 #include "whisper-transcriber.hpp"
 #include "sdl3-audio-recorder.hpp"
-#include "whisper-transcriber.hpp"
+#include "elevenlabs.hpp"
 #include "aipfg/imgui-context.hpp"
 #include <SDL3/SDL.h>
 #include <algorithm>
 #include <exception>
+#include <string>
+#include <iostream>
 #include <utility>
 #include <vector>
 #include <SDL3/SDL.h>
 #ifdef _WIN32
 #include <windows.h> // SetConsoleOutputCP/SetConsoleCP for unicode
 #endif
+
+
+//NEEDED:
+//Whisper ai needs buffer fixed
+//need the counter to display correctly
+//voice integration
+//interaction needs to be implemented
+//buffers fix
+//interaction with the reaper and king needs to be implemented
+//video of the game 
+//speech integration with the reaper and king needs to be implemented
 
 class Game
 {
@@ -48,6 +61,7 @@ public:
         std::make_unique<ScopedImGui>(window_.get(), renderer_.get(), font_size);
 
     npcs_.emplace_back(reaper_sheet_, "idle", 330.0f, 240.0f);
+
     npcs_.emplace_back(knight_sheet_, "knight1-idle", 500.0f, 320.0f);
 
     pickups_.emplace_back(pickup_sheet_, "sweet-yellow", 300.0f, 150.0f);
@@ -97,21 +111,115 @@ private:
   
   bool player_collides() const
   {
-    for (const auto& npc : npcs_)
-      if (player_.overlaps(npc))
+      for (const auto& npc : npcs_)
+          if (player_.overlaps(npc))
+          
         return true;
     return false;
+
+   
   }
+ 
+  void ReaperInteract(const Sprite& npc)
+  {
+      	  
+       if (transcript.find("Three.") != std::string::npos)
+       {
+
+                  //reaper speaks and gives the player the golden fleece
+		   sweets_collected_ = 0; //resets the sweet counter referenced in the UI
+           fleeces_collected_++; //adds to the golden fleece counter referenced in the UI
+       }
+           else
+           {
+                      //reaper speaks and tells the player to find 3 sweets
+           }
+      
+  }
+
+  void KingInteract(const Sprite& npc)
+  {
+      // Implement interaction logic here
+      if (npc.tag_name() == "knight1-idle")
+      {
+          if (fleeces_collected_ >= 1) // Check if the player has collected the golden fleece
+          {
+              //king speaks and thanks the player
+
+              
+			  SDL_Quit(); // End the game 
+			  
+          }
+          else
+          {
+			  //king speaks and tells the player to find the golden fleece
+          }
+      }
+  }
+  
+  
+  void  pickups_collected()
+  {
+      for ( auto& pickup : pickups_)
+      {
+          if (player_.overlaps(pickup) && !collected) //check if player has overlapped with a sweet or fleece if it has not been collected already
+          {
+              if (pickup.tag_name() == "sweet-yellow")
+              {
+                  collected = true;// Mark the pickup as collected to prevent it from being rendered or counted again
+                  sweets_collected_++; //adds to the sweet counter referenced in the UI
+                  
+              }
+               if (pickup.tag_name() == "sweet-red")
+              {
+                  collected = true;// Mark the pickup as collected to prevent it from being rendered or counted again
+                  sweets_collected_++; //adds to the sweet counter referenced in the UI
+                  
+              }
+			   if (pickup.tag_name() == "sweet-blue")
+              {
+                  collected = true;// Mark the pickup as collected to prevent it from being rendered or counted again
+                  sweets_collected_++; //adds to the sweet counter referenced in the UI
+                  
+              }
+          
+              else if (pickup.tag_name() == "golden-fleece")
+              {
+                  fleeces_collected_++; //adds to the golden fleece counter referenced in the UI
+              }
+              
+              
+          }
+      }
+  }
+
 
   void update()
   {
     Uint64 current_tick = SDL_GetTicks();
     float  dt_ms = static_cast<float>(current_tick - last_tick_);
     last_tick_ = current_tick;
+    
 
-    std::erase_if(pickups_, [this](const Sprite& p) {
+	std::erase_if(pickups_, [this](const Sprite& p) // Remove pickups that the player overlaps with
+    {
+        
+      pickups_collected(); // Check if the player has collected any pickups and update the counters accordingly
+           
       return player_.overlaps(p);
+
     });
+
+    for (auto& npc : npcs_)
+    {
+        if (player_.overlaps(npc))
+        {
+            if (npc.tag_name() == "idle")
+                ReaperInteract(npc);
+            else if (npc.tag_name() == "knight1-idle")
+                KingInteract(npc);
+        }
+    }
 
     const bool* keys = SDL_GetKeyboardState(nullptr);
 
@@ -174,6 +282,8 @@ private:
       player_.y_ = -pa.h;
     if (vy < 0.0f && player_.y_ < -pa.h)
       player_.y_ = static_cast<float>(h);
+
+ 
   }
 
   void render()
@@ -197,24 +307,26 @@ private:
     ImGui::Begin("Overlay", nullptr, window_flags);
 
     ImGui::SetWindowPos(ImVec2(10, 10));
-    ImGui::Text("Sweets collected:");
-    ImGui::Text("Golden Fleeces Collected:");
+    ImGui::Text("Sweets collected: %d", sweets_collected_);
+    ImGui::Text("Golden Fleeces Collected: %d", fleeces_collected_);
 
+	ImGui::Separator();
 
+    // Highlight the record button when space is held
     if (space_held_)
         ImGui::PushStyleColor(ImGuiCol_Button,
-        ImGui::GetStyle().Colors[ImGuiCol_ButtonActive]);
+            ImGui::GetStyle().Colors[ImGuiCol_ButtonActive]);
 
     ImGui::Button("Record (Space)");
-
-   if (space_held_)
+    // Pop the style color if it was pushed
+    if (space_held_)
         ImGui::PopStyleColor();
 
-    ImGui::Text("Captured samples: %zu", recorder_.buffer().size());
+   // ImGui::Text("Captured samples: %zu", recorder_.buffer().size());
 
-    ImGui::Separator();
+    //ImGui::Separator();
 
-    ImGui::TextWrapped("%s", transcript.c_str()); 
+    ImGui::TextWrapped("%s", transcript.c_str());
 
     ImGui::End();
 
@@ -258,7 +370,11 @@ private:
   SDL3_AudioRecorder           recorder_;
   WhisperTranscriber transcriber;
   std::string       transcript;
+  int 			    sweets_collected_ = 0; 
+  int               fleeces_collected_ = 0;
 
+  bool 			    collected = false;
+  
   bool        space_held_ = false;
   
 };
@@ -281,6 +397,32 @@ int main()
     SDL_Log("Fatal error: %s", e.what());
     return -1;
   }
+
+  const char* voice_id = std::getenv("ELEVENLABS_VOICE_ID");
+  if (!voice_id)
+  {
+      std::cerr << "Set ELEVENLABS_VOICE_ID environment variable\n";
+      return 1;
+  }
+
+  std::cout << "Text: " << std::flush;
+  std::string text;
+  std::getline(std::cin, text);
+  if (text.empty())
+      return 0;
+
+  try
+  {
+      SDLContext sdl{ SDL_INIT_AUDIO };
+      ElevenLabs tts;
+      tts.speak(text, voice_id);
+  }
+  catch (const std::exception& e)
+  {
+      std::cerr << e.what() << "\n";
+      return 1;
+  }
+
 
   return 0;
 }
